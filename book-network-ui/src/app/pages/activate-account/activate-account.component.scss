@@ -1,0 +1,47 @@
+
+  
+  .container {
+    width: 100%; /* Ensures full width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin-top: 50px; /* Adds some spacing from the top */
+  }
+
+  .title {
+    margin-bottom: 20px; /* Adds spacing below the title */
+  }
+  
+  .code-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds margin between the inputs */
+  }
+  
+  .code-input-container input {
+    width: 40px;  /* Small square size */
+    height: 40px; /* Small square size */
+    text-align: center; /* Centers the input text */
+    font-size: 18px; /* Increases font size */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Adds slight shadow */
+  }
+  
+  .code-input-container input:focus {
+    border-color: #007bff; /* Changes border color on focus */
+    outline: none; /* Removes the default outline */
+  }
+  
+  .text-center {
+    text-align: center; /* Centers the text and the container */
+  }
+  
+  .activate-message , .activate-error {
+    text-align: center;
+  }
+  .activate-error {
+    color: red;
+  }
