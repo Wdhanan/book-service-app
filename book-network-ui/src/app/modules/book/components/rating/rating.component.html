@@ -1,0 +1,19 @@
+<div class="rating">
+    <!-- full stars -->
+    <ng-container  *ngFor="let _ of [].constructor(fullStars); let i = index">
+        <i class="fas fa-star text-warning"></i>
+
+    </ng-container>
+    <!-- half stars -->
+    <ng-container *ngIf="hasHalfStar">
+        <i class="fas fa-star-half-alt text-warning"></i>
+    </ng-container>
+
+    <!-- when we have no feedback we got: empty stars -->
+
+    <ng-container  *ngFor="let _ of [].constructor(emptyStars); let i = index">
+        <i class="fas fa-star"></i>
+
+    </ng-container>
+
+</div>
